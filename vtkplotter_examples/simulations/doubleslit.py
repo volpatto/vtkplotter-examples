@@ -48,7 +48,7 @@ vp += Points(array(slits) * 200, c="w")  # slits scale magnified by factor 200
 vp += Grid(sx=0.1, sy=0.1, resx=6, resy=6, c="w", alpha=0.1)
 vp += Line([0, 0, 0], [0, 0, -D], c="w", alpha=0.1)
 vp += Text("source plane", pos=[-0.04, -0.05, 0], s=0.002, c="gray")
-vp += Text("detector plane D = "+str(D)+" m", pos=[-0.04, -0.05, -D], s=0.002, c="gray")
+vp += Text("detector plane D = "+str(D)+" m", pos=[-.04,-.05,-D+.001], s=.002, c="gray")
 vp += Text2D(__doc__, c="lb")
 
 vp.show(zoom=1.1)

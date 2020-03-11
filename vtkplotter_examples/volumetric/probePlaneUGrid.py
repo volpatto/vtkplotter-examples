@@ -5,7 +5,7 @@ from vtkplotter import *
 data = loadUnStructuredGrid(datadir+"ugrid.vtk")
 
 # create the outline of the data
-outermesh = Mesh(data).alpha(0.2).wireframe()
+outermesh = Mesh(data).alpha(0.5).wireframe()
 orig = data.GetCenter()
 
 pl = probePlane(data, origin=orig, normal=(0.1,0.2,1))

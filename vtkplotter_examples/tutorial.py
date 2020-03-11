@@ -97,12 +97,11 @@ vp.sharecam = False                    # each object can be moved independently
 vp.show(datadir+"beethoven.ply", at=0, axes=0)     # dont show axes, add a ruler
 vp.show(datadir+"cow.byu",       at=1, zoom=1.15)  # make it 15% bigger
 vp.show(datadir+"limb.pcd",      at=2)
-vp.show(datadir+"ring.gmsh",     at=3)
 vp.show(datadir+"images/dog.jpg",at=4)             # 2d images can be loaded the same way
 vp.show(datadir+"shuttle.obj",   at=5)
 vp.show(datadir+"man.vtk",       at=6, axes=2)     # show negative axes from (0, 0, 0)
 vp.show(datadir+"teapot.xyz",    at=7, axes=3)     # hide negative axes
-vp.show(datadir+"pulley.vtu",    at=8, interactive=True)
+vp.show(datadir+"apple.ply",     at=8, interactive=True)
 
 
 ########################################################################################

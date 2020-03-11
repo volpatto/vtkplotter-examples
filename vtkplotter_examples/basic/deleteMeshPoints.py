@@ -3,11 +3,11 @@ which are closest to a specified point.
 """
 from vtkplotter import *
 
-pu = load(datadir+'pumpkin.vtk')
+pu = load(datadir+'apple.ply')
 pu.c('lightgreen').bc('tomato').lw(0.1)
 
 pt = [1, 0.5, 1]
-ids = pu.closestPoint(pt, N=500, returnIds=True)
+ids = pu.closestPoint(pt, N=200, returnIds=True)
 
 pu.deletePoints(ids, renamePoints=1)
 

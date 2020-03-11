@@ -4,7 +4,7 @@ along the z-axis
 """
 from vtkplotter import *
 
-pol = Star().pos(0,0,0).rotateX(10)
+pol = Star().color('y').pos(0,0,0).rotateX(10)
 
 epol = pol.extrude(zshift=1, rotation=10, dR=-0.2, cap=False, res=1)
 epol.bc('violet')

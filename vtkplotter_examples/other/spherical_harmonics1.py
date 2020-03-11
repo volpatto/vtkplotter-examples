@@ -24,7 +24,7 @@ rmax = 1.5      # line length
 x0 = [0, 0, 0]  # set object at this position
 #############################################################
 
-shape = load(datadir+'pumpkin.vtk').normalize().pos(x0).lineWidth(.1)
+shape = load(datadir+'apple.ply').normalize().pos(x0).lineWidth(.1)
 
 show(shape, at=0, N=2, axes={'zxGrid':False})
 

@@ -4,12 +4,12 @@ then extract an isosurface from the 3d image.
 """
 from vtkplotter import *
 
-mesh = load(datadir+"pumpkin.vtk")
+mesh = load(datadir+"apple.ply").subdivide()
 
 # Generate signed distance volume
 vol = volumeFromMesh(mesh,
                      dims=(40,40,40),
-                     bounds=(-1.1, 1.1, -1.1, 1.1, -1.1, 1.1),
+                     bounds=(-1.3, 1.3, -1.3, 1.3, -1.3, 1.3),
                      signed=True,
                      negate=True, # invert sign
 )

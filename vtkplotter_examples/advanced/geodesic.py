@@ -14,5 +14,4 @@ for i in range(20):
 
 doc = Text2D(__doc__, c="w")
 
-show(s, Earth(style=4), doc, paths, 
-	 bg='midnightblue', viewup="z")
+show(s, Earth(), doc, paths, bg='midnightblue', viewup="z")

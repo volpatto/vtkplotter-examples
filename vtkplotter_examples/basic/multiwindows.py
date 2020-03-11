@@ -36,7 +36,7 @@ vp1.show(c, at=24)
 # shape="2/6" means 2 renderers above and 6 below
 # shape="3|1" means 3 renderers on the left and one on the right
 
-s = load(datadir+'pumpkin.vtk')
+s = load(datadir+'mug.ply')
 
 # Set the position of the horizontal of vertical splitting [0,1]:
 #settings.windowSplittingPosition = 0.5

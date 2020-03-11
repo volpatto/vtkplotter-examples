@@ -1,4 +1,4 @@
-"""Convert a mesh it into volume (left in grey) where the
+"""Left: build a volume (grey) from a mesh where the
 foreground voxels are 1 and the background voxels are 0.
 
 Right: the Volume is isosurfaced.
